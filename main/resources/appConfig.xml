@@ -1,0 +1,42 @@
+<PublicVariable_Config>
+
+    <!-- ................ Control Execution Variables  ................... -->
+    <!-- ..................... Environment for UI ........................ -->
+
+
+    <!-- UAT , SIT or NFT -->
+    <PublicVariable name="environmentName">
+        <name>sit</name>
+    </PublicVariable>
+
+	<!--  boolean values only - when set as true all defects will be created in JIRA this will be used when the script is stable -->
+	<PublicVariable name="JiraDefectCreation">
+		<name>false</name>
+	</PublicVariable>
+
+	<!-- boolean values only - when set as true the xray result will be uploaded to JIRA -->
+	<PublicVariable name="UploadExecutionResult">
+		<name>true</name>
+	</PublicVariable>
+
+
+    <!-- to be used when Croatia app having static OTP/ M_PIN -->
+    <PublicVariable name="OTP">
+        <name>0000</name>
+    </PublicVariable>
+
+    <PublicVariable name="passcode">
+        <name>13579</name>
+    </PublicVariable>
+
+    <!-- emulator , physical device or browserstack -->
+    <PublicVariable name="AutomationPlatform">
+        <name>browserstack</name>
+	</PublicVariable>
+
+    <!-- set appium ImplicitWait -->
+    <PublicVariable name="ImplicitWait">
+        <name>0</name>
+    </PublicVariable>
+
+</PublicVariable_Config>
